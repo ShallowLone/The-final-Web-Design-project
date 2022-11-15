@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+  <link href="/css/default.css" rel="stylesheet">
+</head>
+{{template "public/page_header.html".}}
+<body>
+	{{template "public/adminpage_leftindex.html"}}
+	<div class="main">
+		<div class="admin_index"><h1>欢迎来到管理员界面</h1></div>
+		<div class="admin_index"><h4>目前，有 {{.total}} 篇文章存在于我们的网站中</h4></div>
+		<div class="admin_index"><h4>在这里，您可以选择“增加文章”“删除和改动文章”“查看管理员账户”等多种功能</h4></div>
+		<div class="admin_index"><h4>请点击左侧的导航栏或者链接文字，跳转到对应页面，发现BUG请提交至d22090100872@cityu.mo</h4></div>
+		<div class="admin_index"><h4>在管理文章之前，一定要看<a href="/admin/readme">管理说明</a></h4></div>
+	</div> 
+</body>
+{{template "public/page_footer.html".}}
+</html>

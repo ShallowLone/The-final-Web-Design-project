@@ -1,0 +1,145 @@
+/*For All*/
+body{
+	font-family: Microsoft JhengHei;
+	background-attachment: fixed;
+	min-height:700px;
+	min-width:100%;
+	margin: 0px 0px;
+	padding: 0px 0px;
+}
+a{
+	text-decoration: none;/*无下划线*/
+}
+/*Structers*/
+input.IndexSearch{
+	border-width:0px 0px 2px 0px;
+	height: 30px;
+	background-color: #EAECF0;
+}
+header{
+	text-align:center;
+	font-size: 20px;
+    background-color: #EAECF0;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+}
+table.header{
+	min-width: 100%;
+}
+a.header{
+	color: #505152;
+}
+a.header:hover{
+	color:#1e1f1f;
+}
+footer{
+    width: 100%;
+    height:80px;   /*footer的高度一定要是固定值*/ 
+    bottom:0px;
+    left:0px;
+    color: #00477d;
+    background-color: #EAECF0;
+    margin: 20px 0px 0px 0px;
+}
+div.leftIndex{
+	text-align: center;
+	float: left;
+	margin: 100px 0px 0px 10px;
+	min-height: 500px;
+	width: 15%;
+	background-color:#f8f8ff;
+	position: fixed;
+	border:1px solid #b0c4de;
+}
+/*Main Writing Area*/
+div.main{
+	padding: 5px 5px;
+	margin:0% 10% 0% 18%;
+	min-height:650px;
+}
+/*Image Shower*/
+div.imge{
+	background-color:#FFF;
+	margin: 100px;
+	float: right;
+    border: 2px solid #cccccc;
+    width: 180px;
+}
+div.imge:hover {
+    border: 2px solid #777777;
+}
+div.imge img {
+    width: 100%;
+    height: auto;
+}
+div.imgdescrb{
+    text-align: center;
+}
+/*Login Windows*/
+div.loginWindows{
+	text-align: center;
+	background-color: #EAECF0;
+	border: 2px solid grey;
+	width: 800px;
+	height: 600px;
+	margin: 5% auto;
+}
+input.loginWindows{
+	border-width:0px 0px 2px 0px;
+	height: 50px;
+	border-color:#778899;
+	background-color: #EAECF0;
+	margin: 50px;
+}
+/*Temp*/
+div.index_color_block{
+	background-color:rgb(220, 220, 220);
+	width: 100%;
+	height: 60px;
+	border: 1px solid rgb(220, 220, 220);
+}
+/*article_list*/
+div.article_list{
+	padding: 0px 60px;
+	border-style:solid;
+	border-color:grey;
+	border-width:0px 0px 2px 1px;
+	height: 90px;
+}
+div.article_img{
+	background-color:#FFF;
+    border: 2px solid #cccccc;
+    width: 100px;
+    height: 70px;
+}
+div.article_img:hover {
+    border: 2px solid #777777;
+}
+div.article_img img {
+    width: 100%;
+    height: auto;
+}
+/*admin_paragraph*/
+div.admin_index{
+	border-style:solid;
+	border-color:grey;
+	border-width:0px 0px 2px 0px;
+	height: 90px;
+	font-size: 23px;
+}
+/*Login Windows*/
+div.loginWindows{
+	text-align: center;
+	background-color: #EAECF0;
+	border: 2px solid grey;
+	width: 800px;
+	height: 600px;
+	margin: 5% auto;
+}
+/*User*/
+div.usrPage{
+	width: 5000px;
+	text-align: center;
+	min-height:650px;
+}

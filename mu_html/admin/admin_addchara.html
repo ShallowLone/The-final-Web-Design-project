@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{.title}}</title>
+  <link href="/css/default.css" rel="stylesheet">
+</head>
+{{template "public/page_header.html".}}
+<body>
+	{{template "public/adminpage_leftindex.html"}}
+	<div class="main">
+    <div class="article_list"><h1>正在创建角色文章</h1></div>
+		<form style="width:100%;" action="/admin/addchara" method="POST" enctype="multipart/form-data">
+    <h2>上传封面图片(无需封面请上传0.txt,请遵守规范)</h2>
+        <input type="file" style="width:200px;" name="imgfile">
+		<h2>name</h2>
+			<textarea name="rwname" style="width:50%;height: 50px;font-size: 40px;"></textarea>
+		<h2>ID(请遵守规范)</h2>
+			<textarea name="pid"></textarea>
+    <h2>CID(请遵守规范)</h2>
+			<textarea name="cid" ></textarea>
+		<h2>Birthday</h2>
+			<textarea name="rwbirth" style="width:200px;"></textarea>
+		<h2>tags(请用英文逗号隔开)</h2>
+			<textarea name="rwtag" style="width:50%"></textarea>
+		<h2>Content</h2>
+			<textarea name="rwcontent" style="width:90%;height: 600px;font-size:15px;"></textarea>
+			<br><br>
+			<div style="width: 50%;margin:auto;">
+				<button onclick="onConfrm()" type="submit" style="background:#f8f8ff;width: 100px;height: 50px; border-width: 1px;border-color: #b0c4de;font-size: 20px;">提交</button>
+			</div>
+		</form>
+    <form enctype="multipart/form-data" action="/admin/addchara" method="POST">
+      <h6>上传封面图片</h6>
+        <input type="file" style="width:200px;" name="imgfile">
+      <button>Test</button>
+    </form>
+	</div>
+</body>
+{{template "public/page_footer.html".}}
+</html>

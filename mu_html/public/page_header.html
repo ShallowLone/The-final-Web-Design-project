@@ -1,0 +1,19 @@
+{{define "public/page_header.html"}}
+	<header>
+	<table class="header">
+		<tr>
+      		<th><a href="/home/index" class="header">主页</a></th>
+			<th><a href="/class/index" class="header">分类</a></th>
+			<th><a href="/admin/index" class="header">管理</a></th>
+			<th><a href="/home/about" class="header">关于我们</a></th>
+			<th>
+				  <form action="" name="search" method="POST">
+					  <input type="search" class="IndexSearch" name="search" placeholder="点击这里搜索" size=25>
+					  <input type="submit" name="Submit" style="height: 30px;">
+				  </form>
+			</th>
+		</tr>
+	</table>
+	</header>
+	<br id="PageFront"><br><br>
+{{end}}

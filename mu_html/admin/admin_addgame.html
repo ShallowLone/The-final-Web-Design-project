@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{.title}}</title>
+  <link href="/css/default.css" rel="stylesheet">
+</head>
+{{template "public/page_header.html".}}
+<body>
+	{{template "public/adminpage_leftindex.html"}}
+	<div class="main">
+		<form style="width:100%;" action="/admin/addgame" method="POST" name="Rewrite">
+			<h3>Title</h3>
+			<textarea name="rwtitle" style="width:50%;height: 50px;font-size: 40px;">{{.title}}</textarea>
+			<h3>ID(请勿重复)</h3>
+			<textarea required name="pid">{{.id}}</textarea>
+			<h3>Date</h3>
+			<textarea name="rwdate" style="width:200px;">{{.date}}</textarea>
+			<h3>Brand</h3>
+			<textarea name="rwbrand" style="width:200px;">{{.brand}}</textarea>
+			<h3>tags</h3>
+			<textarea name="rwtag" style="width:50%">{{.tag}}</textarea>
+			<h3>Content</h3>
+			<textarea name="rwcontent"  style="width:90%;height: 600px;font-size:15px;">{{.content}}</textarea>
+			<br><br>
+			<div style="width: 50%;margin:auto;">
+				<button onclick="onConfrm()" type="submit" style="background:#f8f8ff;width: 100px;height: 50px; border-width: 1px;border-color: #b0c4de;font-size: 20px;">提交</button>
+			</div>
+		</form>
+	</div>
+</body>
+{{template "public/page_footer.html".}}
+</html>
