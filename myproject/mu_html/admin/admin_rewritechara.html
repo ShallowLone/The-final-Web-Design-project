@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rewrite Articles</title>
+  <link href="/css/default.css" rel="stylesheet">
+  <script type="text/javascript" src="/js/default.js"></script>
+</head>
+{{template "public/page_header.html".}}
+<body>
+	{{template "public/adminpage_leftindex.html"}}
+	<div class="main">
+		{{ range $k, $v := .list}}
+			<div class="article_list">
+				<h3><a href="/chara/{{$v.Cid}}">Name:{{$v.Name}}</a><h3>
+        		Birthday:{{$v.Birth}} GameID:{{$v.Id}} CharacterID:{{$v.Cid}}
+				<div style="float: right;">
+				<a href="/admin/rewrite/chara/{{$v.Cid}}"><button style="width:200px;height: 40px;">改写文章</button></a></div>
+			</div>
+			<br><br>
+		{{ end }}
+    <div class="pageControl"><a href="{{.lpage}}"><button >上一页</button></a><a href="{{.lpage}}"><button>下一页</button></a></div>
+	</div>
+</body>
+{{template "public/page_footer.html".}}
+</html>

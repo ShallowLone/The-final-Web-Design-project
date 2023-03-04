@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{.title}}</title>  
+  <link href="/css/default.css" rel="stylesheet">
+  <script type="text/javascript" src="/js/default.js"></script>
+</head>
+{{template "public/page_header.html".}}
+<body>
+	{{template "public/classpage_leftindex.html"}}
+	<div class="main">
+  <img style="width: 50%;height: auto;float:right;" src="/img/bgpic/class_index.png">
+  <h1>欢迎来到分类页面</h1>
+  <br>
+  <h2>搜索</h2>
+  <input type="search" class="IndexSearch" id="search2" placeholder="点击这里搜索" style="width:40%;height: 50px;background-color:#FFFFFF;">
+  <button style="height: 50px;width: 5%;background-color: #FFF;border-width:1px ;" onclick="GotoSearchPage('search2')">提交</button>
+  <h4>当你在使用搜索功能时，请遵守以下原则</h4>
+  <ul>
+    <li>宁少毋滥，输入准确的文本</li>
+    <li>输入日期时，按照年月日的格式输入，如20040817</li>
+    <li>制作社英文字母小写，角色请用中文名搜索</li>
+    <li>请不要同时进行多个关键字的搜索。</li>
+  </ul>
+  <br><br>
+  <h4>你可以通过以下的特定条件对角色和游戏进行分类</h4>
+  <p>分类依据</p>
+  <ul>
+    <li><a href="/class/time">游戏发售时间</a></li>
+    <li><a href="/class/brand">游戏制作方</a></li>
+    <li><a href="/class/tag">游戏以及角色的特点标签(Tags)</a></li>
+	</div>
+</body>
+{{template "public/page_footer.html".}}
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>登入中</title>
+  <link href="/css/default.css" rel="stylesheet">
+  <script src="/js/default.js" type="text/javascript"></script>
+</head>
+{{template "public/page_header.html".}}
+<body>
+	<div class="loginWindows">
+		<br><br><br>
+		<div>请输入密码，若错误则会重载页面</div>
+		<form class="loginWindows" action="/admin/login_done" method="POST" name="login">
+			<input type="username" name="username" class="loginWindows" style="width: 50%;" placeholder="Your Username">
+			<input type="password" name="password" class="loginWindows" style="width: 50%;" placeholder="Your Password">
+			<button style="width: 40%;height: 50px;" onclick="StopEmptyForm()">Submit</button>
+		</form>
+	</div>
+</body>
+</html>

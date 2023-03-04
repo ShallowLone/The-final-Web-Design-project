@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>关于我们</title>
+  <link href="/css/default.css" rel="stylesheet">
+  <script type="text/javascript" src="/js/default.js"></script>
+</head>
+{{template "public/page_header.html".}}
+<body>
+	{{template "public/indexpage_leftindex.html"}}
+	<div class="main">
+		<div>
+			<h2>制作者名单</h2>
+			<p>D22090100872 和 D22090102670</p>
+			<h2>使用的构架、软件</h2>
+			<p>基于go语言的Gin web框架,万能的宝塔服务器管理软件,Mysql数据库</p>
+			<h2>使用的服务器</h2>
+			<p>先后使用了腾讯,google,华为的服务器</p>
+			<h3>给管理员权限者的话</h3>
+			<p>一定要看修改的规范说明，否则会导致档案删除或增加失败的情况</p>
+		</div>
+		<h3>请留下您的宝贵意见</h3><form method="POST" action="/advice"><textarea name="content" style="width:90%;height: 100px;font-size:15px;"></textarea><br><button>提交</button></form>
+	</div>
+</body>
+{{template "public/page_footer.html".}}
+</html>

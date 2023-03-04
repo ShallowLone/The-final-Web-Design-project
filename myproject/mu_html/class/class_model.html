@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>搜索</title>
+  <link href="/css/default.css" rel="stylesheet">
+  <script type="text/javascript" src="/js/default.js"></script>
+</head>
+{{template "public/page_header.html".}}
+<body>
+	{{template "public/classpage_leftindex.html"}}
+	<div class="main">
+    {{ range $k,$v := .list1}}
+    <div class="article_list">
+        <h3><a href="/game/{{$v.Id}}">Title:{{$v.Title}}</a><h3>
+        社团：{{$v.Brand}}  日期：{{$v.Date}}
+      </div>
+    {{end}}
+    {{ range $k,$v := .list2}}
+    <div class="article_list">
+        <h3><a href="/chara/{{$v.Id}}">Name:{{$v.Name}}</a><h3>
+        日期：{{$v.Birth}}
+    </div>
+    {{end}}
+    <br><br><br>
+    <div class="pageControl"><a  href="{{.lpage}}"><button>上一页</button></a><a href="{{.npage}}"><button>下一页</button></a></div>
+	</div>
+</body>
+{{template "public/page_footer.html".}}
+</html>

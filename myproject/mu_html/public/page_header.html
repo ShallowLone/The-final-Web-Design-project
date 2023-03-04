@@ -1,0 +1,35 @@
+{{define "public/page_header.html"}}
+<script type="text/javascript" src="/js/default.js"></script>
+	<header>
+	<table class="header">
+		<tr>
+      		<th><a href="/home/index" class="header">主页</a>
+      		</th>
+			<th onmouseover="DisplayContent('classes')" onmouseout="DisplayContent('classes')"><a href="/class/index" class="header">分类</a>
+			    <div class="dropdown-content-covered" id="classes">
+			        <p><a class="header" href="/class/index">介绍</a></p>
+      		        <p><a class="header" href="/class/time">时间</a></p>
+      		        <p><a class="header" href="/class/tag">tag</a></p>
+      		        <p><a class="header" href="/class/brand">制作社</a></p>
+      		    </div>
+      		</th>
+			<th onmouseover="DisplayContent('admins')" onmouseout="DisplayContent('admins')"><a href="/admin/index" class="header" >管理</a>
+			    <div class="dropdown-content-covered" id="admins">
+      		        <p><a class="header" href="/admin/index">介绍</a></p>
+	                <p><a class="header" href="/admin/add/chara">增加角色</a></p>
+                    <p><a class="header" href="/admin/add/game">增加游戏</a></p>
+	                <p><a class="header" href="/admin/rewrite/charas/0">删改角色</a></p>
+                    <p><a class="header" href="/admin/rewrite/games/0">删改游戏</a></p>
+                    <p><a class="header" href="/admin/readme">标准文档</a></p>
+      		    </div>
+      		</th>
+			<th><a href="/home/about" class="header">关于我们</a></th>
+			<th>
+				<input type="search" class="IndexSearch" id="search1" placeholder="点击这里搜索" size=25>
+				<button style="height: 30px;" onclick="GotoSearchPage('search1')">提交</button>
+			</th>
+		</tr>
+	</table>
+	</header>
+	<br id="PageFront"><br><br>
+{{end}}
